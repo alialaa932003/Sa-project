@@ -1,9 +1,6 @@
-
 body {
     background: #ffffff;
     overflow-x: hidden;
-
-
 }
 
 /*//////////////////////////////////start my .header11  /////////////////////////////////////*/
@@ -33,25 +30,30 @@ body {
 
 /*////////////////////////////////////////////////////end my .header11 ////////////////////////////// */
 
-
 /*//////////////////////////////// start main /////////////////////////////////////*/
 main {
     position: relative;
 }
 
 .container1 {
-    margin-left: 220px;
-    width: 68%;
-    padding: 40px;
+    /* margin-left: 220px; */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    /* padding: 40px; */
+    margin-top: 200px;
 }
 
 .container1 .title {
     margin-top: 23px;
-    margin-left: 122px;
+    /* margin-left: 122px; */
     margin-bottom: 44px;
     text-align: center;
-    margin-right: 141px;
-
+    /* margin-right: 141px; */
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
 }
 
 .container1 .faq {
@@ -69,9 +71,8 @@ main {
 
 .container1 .faq .parent-tab label {
     position: relative;
+    width: 100%;
 }
-
-
 
 .container1 .title p {
     color: #6d6d6d;
@@ -92,11 +93,11 @@ main {
     transition: all 0.4s ease;
 }
 
-.container1 .faq .parent-tab input:checked~.content {
+.container1 .faq .parent-tab input:checked ~ .content {
     max-height: 100vh;
 }
 
-.container1 .faq .parent-tab input:checked~label .icon i:before {
+.container1 .faq .parent-tab input:checked ~ label .icon i:before {
     content: "\f068";
 }
 
@@ -104,9 +105,9 @@ main {
     display: block;
     width: 30px;
     height: 28px;
-    right: 859px;
     position: absolute;
     bottom: -11px;
+    left: 0;
 }
 
 .container1 .faq .parent-tab .icon i {
@@ -118,8 +119,8 @@ main {
 }
 
 .container1 .parent-tab .content p {
-    margin: 13px 20px 10px 44px;
-    padding-left: 90px;
+    margin: 13px 0 10px 0;
+    /* padding-left: 90px; */
 }
 
 .container1 .parent-tab .content span {

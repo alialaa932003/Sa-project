@@ -1,17 +1,15 @@
-
-
-body{
+body {
     background: var(--bg-body);
-    direction: rtl
+    direction: rtl;
 }
-img{
-    object-fit:cover;
-    object-position:center;
+img {
+    object-fit: cover;
+    object-position: center;
 }
-a{
+a {
     text-decoration: none;
 }
-a:link{
+a:link {
     text-decoration: none;
 }
 .body {
@@ -28,40 +26,36 @@ a:link{
     padding-right: 70px;
     margin-top: 20px;
 }
-.main{
+.main {
     color: var(--bold-text);
     font-size: 1.4em;
     font-weight: bold;
-
 }
-.heading p :hover{
+.heading p :hover {
     color: var(--color-main);
 }
 .contenar .heading .address-hint {
     color: var(--color-main);
 }
 
-
 .mod {
     color: #e74c3c;
     font-size: 1.4em;
     font-weight: bold;
 }
-.latest-blogs  {
+.latest-blogs {
     margin-top: 30px;
     text-align: center;
 }
 .centar {
     text-align: center;
     font-weight: bold;
-
 }
 .under-manshit {
     text-align: center;
     font-size: 1.2em;
     font-weight: 300;
     color: #717171;
-
 }
 .prodacts {
     display: flex;
@@ -74,15 +68,23 @@ a:link{
 }
 .left {
     margin-left: 5%;
-
+    max-width: 400px;
 }
-.right{
+.right {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.blog{
+@media (max-width: 1150px) {
+    .prodacts {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left {
+    }
+}
+.blog {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -96,48 +98,49 @@ a:link{
     border-radius: 30px;
 }
 
-
 .blog-pic {
     width: 100%;
-    border-radius: 30px 30px 0 0 ;
+    border-radius: 30px 30px 0 0;
 }
 .blog-manshit {
-    width:90%;
+    width: 90%;
     color: var(--bold-text);
+    padding: 25px 15px 15px;
 }
 .blog-dis {
-    width:90%;
+    width: 90%;
     color: var(--light-text);
+    padding-bottom: 15px;
 }
 .admin-color {
     color: #e74c3c;
 }
 
-
-
-
 .categories {
-
     background-color: #71717122;
     border-radius: 24px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 2rem;
     text-align: center;
     overflow: auto;
     padding-bottom: 12px;
-    width: 300px;
+    /* width: 300px; */
     height: 444px;
-    margin-top: -25px;
-    direction: rtl;
+    /* margin-top: -25px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 .for-scroll {
-    height: 445px;
-    top: 25px;
+    /* height: 445px; */
+    /* top: 25px;
     right: 92px;
-    background-color: #ffffff;
     padding-top: 3rem;
-    border-radius: 25px;
+    border-radius: 25px; */
 }
 
 .categories::-webkit-scrollbar {
@@ -150,9 +153,6 @@ a:link{
     margin-block: 70px;
     direction: rtl;
     margin: 30px;
-
-
-
 }
 
 .categories::-webkit-scrollbar-thumb {
@@ -170,17 +170,20 @@ a:link{
 
 .categories p {
     font-size: 14px;
-    padding-left: 61px;
+    /* padding-left: 61px; */
+    text-align: center;
     padding-bottom: 0;
     color: var(--bold-text);
 }
 .categories h4 {
     font-size: 17px;
     color: var(--light-text);
-    padding-left: 58px;
-    padding-bottom: 0;
+    /* padding-left: 58px; */
+    /* padding-bottom: 0; */
+    padding: 1rem 0;
 }
-.title-2  {
+
+.title-2 {
     color: var(--color-main);
 }
 
@@ -190,7 +193,7 @@ a:link{
     width: 60px;
     height: 40px;
     background-color: #7171710b;
-    color:#e74c3c;
+    color: #e74c3c;
     margin-bottom: 50px;
     position: relative;
     right: 280px;
@@ -204,21 +207,17 @@ a:link{
     border-radius: 15px;
     border: none;
     border: var(--color-main);
-    background-color:#71717133 ;
+    background-color: #71717133;
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
     position: relative;
-
 }
-.search-d  {
+.search-d {
     background-color: var(--bg-body);
 }
 
-
-
-
-.hover-button{
+.hover-button {
     height: 100%;
     width: 100%;
     left: 0;
@@ -227,13 +226,13 @@ a:link{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(0,0,0,0.6);
-    transition:all ease .4s;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all ease 0.4s;
     opacity: 0;
     border-radius: 17px;
 }
 
-.button1{
+.button1 {
     background-color: var(--color-main);
     width: 200px;
     height: 50px;
@@ -248,12 +247,9 @@ a:link{
     text-decoration: none;
 }
 
-
-.blog:hover .hover-button{
-    opacity : 1;
-
+.blog:hover .hover-button {
+    opacity: 1;
 }
-.page-link{
+.page-link {
     color: var(--color-main);
 }
-

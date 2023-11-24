@@ -9,7 +9,7 @@
 
     /*========== Colors ==========*/
     --first-color: #b27f7c;
-    --first-color-light: #f4f0fa;
+    --first-color-light: #ffffff;
     --title-color: #19181b;
     --text-color: #58555e;
     --text-color-light: #a5a1aa;
@@ -438,6 +438,7 @@ nav .nav-icon a i {
 footer {
     border-top: 10px solid var(--main-body);
     padding: 60px 0;
+    background: #fff;
 }
 footer .brand {
     width: 100px;
@@ -450,6 +451,7 @@ footer p {
     font-size: 16px;
     font-weight: 600;
     color: var(--font-light);
+
     margin-top: 10px;
 }
 footer h3 {
@@ -521,4 +523,5 @@ footer .download span {
     color: var(--main-body);
     text-align: center;
     font-size: 18px;
+    color: #fff !important;
 }

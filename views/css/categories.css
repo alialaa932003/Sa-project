@@ -1,16 +1,17 @@
-
-
-.head2{
+main {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.head2 {
     text-align: center;
     margin: 20px;
 }
-main .box{
+main .box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
-main .item{
+main .item {
     width: 45%;
     background: var(--bg-body);
     margin-left: 2.5%;
@@ -20,19 +21,16 @@ main .item{
     padding: 20px;
     text-align: right;
     border-radius: 10px;
-
 }
-.lenk{
-    color:black;
+.lenk {
+    color: black;
     text-decoration: none;
     font-size: 22px;
-
 }
 
-main .item:hover{
+main .item:hover {
     cursor: pointer;
 }
-
 
 main .fa {
     padding: 10px;
@@ -42,13 +40,8 @@ main .fa {
     text-decoration: none;
     border-radius: 10px;
     color: var(--color-main);
-
 }
-
 
 main .fa:hover {
     opacity: 0.7;
 }
-
-
-
