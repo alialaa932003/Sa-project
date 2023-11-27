@@ -186,6 +186,7 @@ let footer = `<footer class="">
                                 </li>
                                 <li><a href="wishlist.html">المفضلة</a></li>
                                 <li><a href="cart.html">العربة</a></li>
+                                <li><a href="../admin_sa/index.html">لوحة التحكم</a></li>
                             </ul>
                         </div>
                     </div>
