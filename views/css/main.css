@@ -410,7 +410,7 @@ nav .nav-icon .shopping::after {
     font-size: 9px;
     border-radius: 50%;
 }
-nav .nav-icon a {
+nav .nav-icon .logBtn {
     position: relative;
     background-color: var(--main-color);
     color: var(--main-body);
@@ -420,10 +420,10 @@ nav .nav-icon a {
     box-shadow: 0 0 8px var(--main-color);
     font-weight: 600;
 }
-nav .nav-icon a:hover {
+nav .nav-icon .logBtn:hover {
     background-color: var(--font-dark);
 }
-nav .nav-icon a i {
+nav .nav-icon .logBtn i {
     position: absolute;
     top: 50%;
     transform: translateY(-40%);
