@@ -122,10 +122,6 @@ body {
 /*///////////////////////////////////// end container ///////////////////////////////////////*/
 
 /*/////////////////////////////////////// start aside /////////////////////////////////////////*/
- {
-	position: relative;
-}
-
 .main-aside {
 	display: flex;
 	flex-wrap: wrap;
@@ -211,7 +207,6 @@ body {
 	font-weight: 500;
 	color: var(--light-text);
 	padding-bottom: 15px;
-	padding-top: ;
 	padding: 3px 7px;
 	flex-basis: 30px;
 }
