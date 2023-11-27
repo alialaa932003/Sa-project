@@ -193,7 +193,9 @@ body {
 	width: 264px;
 	margin-top: 39px;
 }
-
+.filter * {
+	direction: ltr;
+}
 .main-aside .filter h2 {
 	padding-left: 166px;
 	font-size: 29px;
