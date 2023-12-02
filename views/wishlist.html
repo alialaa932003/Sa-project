@@ -93,7 +93,7 @@
 								</div>
 								<div class="col-lg-4">
 									<p class="item-price">22,897 ج.م</p>
-									<button class="item-close" id="remove1">
+									<button class="item-close" id="remove2">
 										<i class="fa-solid fa-heart-circle-xmark"></i>
 									</button>
 								</div>
@@ -124,7 +124,7 @@
 								</div>
 								<div class="col-lg-4">
 									<p class="item-price">22,897 ج.م</p>
-									<button class="item-close" id="remove1">
+									<button class="item-close" id="remove3">
 										<i class="fa-solid fa-heart-circle-xmark"></i>
 									</button>
 								</div>
@@ -155,7 +155,7 @@
 								</div>
 								<div class="col-lg-4">
 									<p class="item-price">22,897 ج.م</p>
-									<button class="item-close" id="remove1">
+									<button class="item-close" id="remove4">
 										<i class="fa-solid fa-heart-circle-xmark"></i>
 									</button>
 								</div>
@@ -186,7 +186,7 @@
 								</div>
 								<div class="col-lg-4">
 									<p class="item-price">22,897 ج.م</p>
-									<button class="item-close" id="remove1">
+									<button class="item-close" id="remove5">
 										<i class="fa-solid fa-heart-circle-xmark"></i>
 									</button>
 								</div>
@@ -195,7 +195,7 @@
 					</div>
 					<!-- end -->
 
-					<div class="col-12 itemCart">
+					<div class="col-12 my-5">
 						<a class="goTo" href="home1.html"
 							><i class="fa-solid fa-left-long"></i>اكمل التسوق</a
 						>
@@ -218,31 +218,41 @@
 			crossorigin="anonymous"
 		></script>
 		<script>
-			$(document).ready(function () {
-				$("#remove1").click(function () {
-					$("#item1").remove();
+			const items = document.querySelectorAll(".itemCart");
+			const removeButtons = document.querySelectorAll(".item-close");
+
+			removeButtons.forEach((btn, index) => {
+				btn.addEventListener("click", () => {
+					const item = items.item(index);
+					item.parentNode.removeChild(item);
 				});
 			});
-			$(document).ready(function () {
-				$("#remove2").click(function () {
-					$("#item2").remove();
-				});
-			});
-			$(document).ready(function () {
-				$("#remove3").click(function () {
-					$("#item3").remove();
-				});
-			});
-			$(document).ready(function () {
-				$("#remove4").click(function () {
-					$("#item4").remove();
-				});
-			});
-			$(document).ready(function () {
-				$("#remove5").click(function () {
-					$("#item5").remove();
-				});
-			});
+
+			// $(document).ready(function () {
+			// 	$("#remove1").click(function () {
+			// 		$("#item1").remove();
+			// 	});
+			// });
+			// $(document).ready(function () {
+			// 	$("#remove2").click(function () {
+			// 		$("#item2").remove();
+			// 	});
+			// });
+			// $(document).ready(function () {
+			// 	$("#remove3").click(function () {
+			// 		$("#item3").remove();
+			// 	});
+			// });
+			// $(document).ready(function () {
+			// 	$("#remove4").click(function () {
+			// 		$("#item4").remove();
+			// 	});
+			// });
+			// $(document).ready(function () {
+			// 	$("#remove5").click(function () {
+			// 		$("#item5").remove();
+			// 	});
+			// });
 		</script>
 	</body>
 </html>
