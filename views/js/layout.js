@@ -59,7 +59,7 @@ let mainNavbar = `<div class="parent">
                 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
             </form>
             <div class="nav-icon lol">
-                <span><i class="fa fa-sliders" aria-hidden="true"></i></span>
+                
                 <span class="shopping"
                 >
                 <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -105,16 +105,14 @@ let mainNavbar = `<div class="parent">
                     </li>
                 </ul>
                 <div class="nav-icon">
-                     <span
-                     ><i class="fa fa-sliders" aria-hidden="true"></i
-                     ></span>
-                    <a href="/cart.html" class="shopping"
-                    ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                     </a>
-                    <a href="login.html">
-                        تسجيل
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </a>
+                    <span class="shopping"
+                >
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  </span>
+                <a href="login.html" class="logBtn">
+                    تسجيل
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </a>
                 </div>
             </div>
             <button
