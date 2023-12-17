@@ -678,18 +678,6 @@
 
                 updatePrices();
 
-                // handleItemActions(
-                //     1,
-                //     parseFloat(document.getElementById("itemsPrice1").innerHTML)
-                // );
-                // handleItemActions(
-                //     2,
-                //     parseFloat(document.getElementById("itemsPrice2").innerHTML)
-                // );
-                // handleItemActions(
-                //     3,
-                //     parseFloat(document.getElementById("itemsPrice3").innerHTML)
-                // );
                 document.querySelectorAll(".priceItem").forEach((ele, i) => {
                     handleItemActions(i + 1, parseFloat(ele.innerHTML));
                 });
